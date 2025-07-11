@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Martello Farias</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <style>
+    /* Estilo para o rodapé fixo */
+    body {
+      margin: 0;
+      padding-bottom: 60px;
+      /* Espaço para o rodapé */
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #222;
+      color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Introdução -->
+    <section class="intro">
+      <div class="text-section">
+        <h1>
+          <a href="https://Gabriefarias.dev/" target="_blank" rel="noopener noreferrer"
+            style="color: inherit; text-decoration: none;">
+            Gabriel Martello Farias
+          </a>
+        </h1>
+        <p class="nickname">Dev Iniciante</p>
+        <p>
+          Olá, meu nome é Gabriel Martello Farias, estou iniciando minha carreira como desenvolvedor de software.
+          Estou sempre aberto a aprender e melhorar, e sou apaixonado por
+          <span class="purple">tecnologia</span>,
+          <span class="blue">programação</span> e
+          <span class="purple">resolução de problemas</span>.
+        </p>
+
+        <!-- Redes Sociais -->
+        <div class="social-icons">
+          <a href="https://github.com/Gabrielmf01" target="_blank" aria-label="GitHub">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-martello-farias-72a52133b/" target="_blank"
+            aria-label="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="#" id="copy-email" aria-label="Copiar e-mail">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Email" />
+          </a>
+        </div>
+      </div>
+
+      <div class="photo-section">
+        <img src="./img/Gabriel3.jpg" alt="Gabriel Martello" class="profile-photo" />
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="skills">
+      <h2><span class="hashtag">#</span>Principais Competências</h2>
+      <p>Habilidades, linguagens e ferramentas que estou estudando e buscando dominar.</p>
+
+      <div class="skills-list">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+        <ul>
+          <li>React (em aprendizado)</li>
+          <li>Node.js (básico)</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Educação -->
+    <section class="education">
+      <h2><span class="hashtag">#</span>Educação</h2>
+      <p>Formações acadêmicas relacionadas à área de tecnologia da informação.</p>
+
+      <ul class="education-institution">
+        <li>Unicesumar</li>
+        <li>Análise e Desenvolvimento de Sistemas</li>
+        <li>2022 - 2025</li>
+      </ul>
+
+      <div class="education-box">
+        <ul class="left-column">
+          <li>Lógica de Programação</li>
+          <li>Programação em Java</li>
+          <li>Banco de Dados</li>
+          <li>Engenharia de Software</li>
+          <li>Segurança da Informação</li>
+        </ul>
+        <ul class="right-column">
+          <li>Algoritmos</li>
+          <li>Redes de Computadores</li>
+          <li>Programação Web</li>
+          <li>Sistemas Operacionais</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    Feito por Gabriel Farias
+  </footer>
+
+  <script>
+    document.getElementById("copy-email").addEventListener("click", function (e) {
+      e.preventDefault();
+      const email = "gabrielmartello558@gmail.com";
+      navigator.clipboard.writeText(email)
+        .then(() => alert("E-mail copiado: " + email))
+        .catch(err => console.error("Erro ao copiar o e-mail:", err));
+    });
+  </script>
+</body>
+
+</html>
